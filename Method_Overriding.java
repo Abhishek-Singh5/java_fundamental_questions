@@ -1,7 +1,10 @@
 class A{
     
+    int age;
+    
     void print(){
         
+        age = 5;
         System.out.println("Class A");
     }
     
@@ -9,8 +12,12 @@ class A{
 
 class B extends A{
     
+    int age;
+    
     void print(){
         
+        
+        age = 10;
         System.out.println("Class B");
     }
     
@@ -22,5 +29,8 @@ class Main{
         B obj = new B();
         
         obj.print();
+        
+        System.out.println(obj.age);
+    
     }
 }
